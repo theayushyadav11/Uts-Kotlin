@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context=".activities.MainActivity">
+        <include
+            android:id="@+id/action_bar"
+            layout="@layout/actionbar"
+            android:layout_width="match_parent"
+            android:layout_alignBottom="@+id/textView"
+            android:layout_height="60dp"
+            android:layout_alignParentTop="true">
+
+        </include>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <TextView
+        android:id="@+id/textView"
+
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:paddingStart="25dp"
+        android:paddingRight="25dp"
+        android:text="INDIAN RAILWAYS OFFERS 3% BONOUS ON RECHARGE OF R-WALLET"
+        android:textColor="#17177f"
+        android:textSize="13sp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_below="@id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#ebedee"></View>
+
+
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_below="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:tabIndicatorColor="#f78848"
+        android:background="@color/white"
+        app:tabIndicatorFullWidth="true"
+        app:tabSelectedTextColor="@color/black"
+        app:tabTextColor="@color/black" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_below="@id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+        <androidx.cardview.widget.CardView
+      android:id="@+id/cc"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="15dp"
+            android:layout_marginBottom="-30dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+
+
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_marginVertical="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+
+                    android:orientation="horizontal">
+                <androidx.cardview.widget.CardView
+
+                    android:id="@+id/img"
+
+                    android:layout_width="32dp"
+
+                    android:layout_height="32dp"
+
+
+                    app:cardCornerRadius="50dp">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/cris"/>
+                </androidx.cardview.widget.CardView>
+                <TextView
+                   android:layout_toRightOf="@+id/img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Center for Railway Information Systems(CRIS)"
+                    android:gravity="center"
+                    android:layout_centerInParent="true"
+
+                    android:textColor="#E6372A"/>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</LinearLayout>

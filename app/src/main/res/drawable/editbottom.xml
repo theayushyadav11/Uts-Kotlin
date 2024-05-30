@@ -1,0 +1,8 @@
+<!-- res/drawable/edit_text_bottom_line.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:top="-2dp" android:right="-2dp" android:left="-2dp">
+        <shape android:shape="rectangle">
+            <solid android:color="#f78848" /> <!-- Set your desired color -->
+        </shape>
+    </item>
+</layer-list>
